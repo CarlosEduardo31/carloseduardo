@@ -258,3 +258,18 @@ font-size: 2rem;
 		align-items: center;
 	}
 }
+
+@media (max-width:400px) {
+	.inicio .inicio_img {
+		display: none;
+	}
+
+	.inicio_content h2 {
+		font-size: 40px;
+	}
+
+	.contato .card-contato {
+		font-size: 1rem;
+	}
+
+}

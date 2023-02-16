@@ -1,22 +1,3 @@
-:root {
-	--hue: 24;
-	--primary-color: hsl(var(--hue), 90%, 54%);
-	--headline: hsl(210, 11%, 15%);
-	--paragraph: hsl(210, 9%, 31%);
-  
-	--brand-beige: hsl(39, 100%, 97%);
-	--brand-light: hsl(calc(var(--hue) - 22), 0%, 93%);
-	--brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
-	--brand-dark: hsl(var(--hue), 100%, 14%);
-  
-	--bg-light: hsl(180, 14%, 97%);
-	--bg-green: hsl(125, 63%, 37%);
-  
-	/* font-size: 62.5%; 1rem = 10px */
-  
-	--nav-height: 7.2rem;
-}
-  
 * {
 	margin: 0;
 	padding: 0;
@@ -42,6 +23,7 @@ section {
 	width: 100%;
 }
 
+/* SECTION INICIO */
 .inicio {
 	width: 100%;
 	height: 100vh;
@@ -114,6 +96,7 @@ section {
 	border-radius: 10px;
 }
 
+/* SECTION SOBRE */
 .sobre {
 	width: 100%;
 	background-color: #ebebeb;
@@ -188,14 +171,15 @@ section {
 	color: #fff;
 }
 
+/* SECTION HABILIDADES */
 .habilidades {
 	background-color: #ffffff;
 }
+
 .habilidades h2 {
 	font-size: 46px;
 	margin-bottom: 60px;
 }
-
 
 .habilidades .progressao {
 	background-color: #f52e2e;
@@ -205,8 +189,14 @@ section {
 	text-transform: uppercase;
 }
 
+/* SECTION PORTFOLIO */
 .portfolio {
 	background-color: #ebebeb;
+}
+
+.portfolio h2 {
+	font-size: 46px;
+	margin-bottom: 60px;
 }
 
 .portfolio .card {
@@ -231,86 +221,40 @@ section {
 	border: 2px solid #151414;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* texto hero image */
-/* .hero_titulo {
-	font-size: 4.5rem;
+/* SECTION CONTATO */
+.contato h2 {
+	font-size: 46px;
+	margin-bottom: 60px;
 }
-.hero_desc {
-	font-size: 2rem;
-}
-.hero-text {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
+.contato .card-contato {
+font-size: 2rem;
 }
 
-.hero-img img{
-	width: 500px;
-}
-.bgimage{
-	height: 100vh;
-	background: url('./planetas.jpg');
-	background-size: cover;
-	position: relative;
-} */
-
-/* imagem sobre */
-
-/* .imagemSobre {
-	width: 100%;
-} */
-
-/* serviços */
-
-/* .servicesText.card{
-	height: 280px;
-	cursor: pointer;
+/* FOOTER */
+.footer .social-midia {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.servicesIcon {
-	font-size: 36px;
-	text-align: center;
-	width: 100%;
+.footer .copyright {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.card-title {
-	text-align: center;
-}
+@media (max-width:992px) {
+	.inicio .inicio_img {
+		display: none;
+	}
 
-.card:hover .servicesIcon{
-	color: #008000;
-}
+	.inicio_content h2 {
+		font-size: 60px;
+	}
 
-.servicesText:hover {
-	border: 1px solid #008000;
-} */
+	.contato .card-contato {
+		font-size: 1.5rem;
+	}
+
+	.contato .mapa {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

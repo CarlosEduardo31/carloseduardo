@@ -1,8 +1,5 @@
 # Portfolio Website
-<<<<<<< HEAD
 
-=======
->>>>>>> 2f25bf581cccdd286159f6d9dfb95bc19e105e41
 <p>
 Este é um site de portfólio pessoal que foi criado usando HTML, CSS, JavaScript e Bootstrap. O site apresenta uma breve descrição do meu trabalho, habilidades, projetos e informações de contato.
 </p>

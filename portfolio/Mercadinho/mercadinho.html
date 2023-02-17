@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mercadinho</title>
+	
+	<!-- arquivo CSS próprio-->
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- Java Script -->
+
+	<script type="text/javascript" src="javascript.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<h1 class="display-1 text-center mb-5">Mercadinho Santa Maria</h1>
+
+ 	<h2 class="text-center mb-5">Cadastro de Produtos</h2>
+
+	<div class="container mb-5">
+		<form name="cadastrar" onsubmit="event.preventDefault()">
+			<div class="row">				
+				<div class="mb-3 col">
+					<label for="codigo" class="form-label">Código: </label>
+					<input type="text" id="codigo" class="form-control" placeholder="00" name="codigo" required>
+				</div>
+				
+				<div class="mb-3 col">
+					<label for="produto" class="form-label">Nome do Produto: </label>
+					<input type="text" id="produto" class="form-control" name="produto" required>
+				</div>
+			</div>
+
+	
+			<div class="row">
+		
+				<div class="mb-3 col">
+					<label for="marca" class="form-label">Marca: </label>
+					<input type="text" id="marca" class="form-control" name="marca" required>
+				</div>
+			
+				<div class="mb-3 col">
+					<label for="preco" class="form-label">Preço: </label>
+					<input type="number" id="preco" class="form-control" name="preco" step="0.01" min="0.01" required>
+				</div>
+			</div>
+
+		
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3" onclick="validaForm()">Cadastrar</button>
+			</div>
+
+		</form>
+		
+	</div>
+   
+       <div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+	
+	<div class="container">
+		<table class="table table-dark table-hover">
+			<thead>
+				<tr>
+					<th scope="col">Código					</th>
+					<th scope="col">Nome do Produto			</th>
+					<th scope="col">Marca					</th>
+					<th scope="col">Preço					</th>
+				</tr>
+			</thead>
+			<tbody id="inserirTabela">
+							
+			</tbody>
+		</table>
+	</div>
+	
+</body>
+</html>

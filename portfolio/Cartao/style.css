@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+	background: #643a7a;
+	font-family: "nunito";
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame {
+	position: relative;
+}
+
+.card {
+	background-color: transparent;
+	width: 604px;
+	height: 345px;
+	perspective: 1000px;
+}
+
+.frame::after {
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 25px;
+	background: #000;
+	filter: blur(35px);
+	transition: 1.2s;
+	z-index: -1;
+	perspective: 0px;
+}
+
+.flip {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 1.2s;
+	transform-style: preserve-3d;
+}
+
+.frame:hover .flip {
+	transform: rotateY(180deg);
+}
+
+.frame:hover::after {
+	transform: translate(-50%, -50%) rotateY(-180deg);
+}
+
+.front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	border-radius: 25px;
+	background: #2e2d31;
+}
+
+.front {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.front h1 {
+	font-family: Satisfy, cursive;
+	font-size: 36px;
+	margin: 16px 80px;
+	color: #0aee0a;
+}
+
+.front .flip-me {
+	font-size: 20px;
+	color: #ffffffb3;
+}
+
+.back {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	transform: rotateY(180deg);
+}
+
+.back h3 {
+	color: #ffffffb3;
+	font-family: satisfy, cursive;
+	font-weight: 300;
+	font-size: 32px;
+	margin: 32px;
+}
+
+.back h2 {
+	font-size: 36px;
+	margin: 8px;
+	color: #0aee0a;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.redes {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+.redes img {
+	width: 32px;
+}
+
+.redes img:hover {
+	width: 46px;
+	cursor: pointer;
+}
+

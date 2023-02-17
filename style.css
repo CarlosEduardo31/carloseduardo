@@ -16,11 +16,24 @@ body {
 }
 
 section {
-	padding-block: 56px ;
+	padding-block: 3.5rem;
 }
 
 .header{
 	width: 100%;
+}
+
+/* MENU */
+.navbar li a {
+	color: #fff;
+	transition: 0.3s ease-in;
+}
+.navbar li a:hover {
+	color: #f52e2e;
+}
+
+.navbar .navbar-toggler {
+	background-color: #fff;
 }
 
 /* SECTION INICIO */
@@ -43,26 +56,26 @@ section {
 }
 
 .inicio_content h5 {
-	font-size: 25px;
+	font-size: 1.5625rem;
 	font-weight: 600;
 	color: rgba(52, 52, 53, 0.61);
 }
 
 .inicio_content h2 {
-	font-size: 74px;
+	font-size: 4.625rem;
 	font-weight: 800;
-	margin: 22px 0;
-	letter-spacing: 1px;
+	margin: 1.375rem 0;
+	letter-spacing: 0.0625rem;
 }
 
 .inicio_content .btn_inicio {
 	display: inline-block;
 	text-decoration: none;
 	background-color: #2e2d2d;
-	padding: 12px 32px;
-	border-radius: 50px;
+	padding: 0.75rem 2rem;
+	border-radius: 3.125rem;
 	color: #fff;
-	margin: 28px 4px;
+	margin: 1.75rem 0.25rem;
 	font-weight: 600;
 	transition: 0.3s ease-in;
 }
@@ -76,12 +89,12 @@ section {
 }
 
 .inicio_content .icon_social {
-	font-size: 17px;
-	padding: 12px 14px;
+	font-size: 1.0625rem;
+	padding: 0.75rem 0.875rem;
 	color: #151414;
-	border: 2px solid #2e2d2d;
-	border-radius: 30px;
-	margin: 0px 4px;
+	border: 0.125rem solid #2e2d2d;
+	border-radius: 1.875rem;
+	margin: 0px 0.25rem;
 	cursor: pointer;
 	transition: 0.3s ease;
 }
@@ -91,9 +104,13 @@ section {
 	color: #fff;
 }
 
+.inicio .social_links a {
+	text-decoration: none;
+}
+
 .inicio .inicio_img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 0.625rem;
 }
 
 /* SECTION SOBRE */
@@ -103,13 +120,13 @@ section {
 }
 
 .sobre h2 {
-	font-size: 46px;
-	margin-bottom: 60px;
+	font-size: 2.875rem;
+	margin-bottom: 3.75rem;
 }
 
 .sobre .img_sobre {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 0.625rem;
 }
 
 .sobre .sobre_content {
@@ -121,33 +138,33 @@ section {
 }
 
 .sobre .items {
-	margin: 8px 0px;
+	margin: 0.5rem 0px;
 	/* list-style: none; */
 }
 
 .sobre .items b {
 	font-weight: 600;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	color: rgba(0, 0, 0, 0.82);
 }
 
 .sobre .items span {
-	margin: 0px 3px;
+	margin: 0px 0.1875rem;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	color: rgba(0, 0, 0, 0.72);
 }
 
 .sobre .btn_sobre {
 	display: inline-block;
-	padding: 11px 37px;
+	padding: 0.6875rem 2.3125rem;
 	text-decoration: none;
 	color: #f52e2e;
-	border: 2px solid #f52e2e;
-	width: 200px;
-	margin: 12px 0px;
+	border: 0.125rem solid #f52e2e;
+	width: 12.5rem;
+	margin: 0.75rem 0px;
 	font-weight: 600;
-	border-radius: 3px;
+	border-radius: 0.1875rem;
 	position: relative;
 	z-index: 77;
 }
@@ -177,8 +194,8 @@ section {
 }
 
 .habilidades h2 {
-	font-size: 46px;
-	margin-bottom: 60px;
+	font-size: 2.875rem;
+	margin-bottom: 3.75rem;
 }
 
 .habilidades .progressao {
@@ -195,8 +212,8 @@ section {
 }
 
 .portfolio h2 {
-	font-size: 46px;
-	margin-bottom: 60px;
+	font-size: 2.875rem;
+	margin-bottom: 3.75rem;
 }
 
 .portfolio .card {
@@ -212,19 +229,19 @@ section {
 .portfolio a {
 	background-color: #f52e2e;
 	color: #fff;
-	border: 2px solid #f52e2e;
+	border: 0.125rem solid #f52e2e;
 	transition: 0.3s ease-in;
 }
 
 .portfolio a:hover {
 	background-color: #151414;
-	border: 2px solid #151414;
+	border: 0.125rem solid #151414;
 }
 
 /* SECTION CONTATO */
 .contato h2 {
-	font-size: 46px;
-	margin-bottom: 60px;
+	font-size: 2.875rem;
+	margin-bottom: 3.75rem;
 }
 .contato .card-contato {
 font-size: 2rem;
@@ -245,7 +262,7 @@ font-size: 2rem;
 	}
 
 	.inicio_content h2 {
-		font-size: 60px;
+		font-size: 3.75rem;
 	}
 
 	.contato .card-contato {
@@ -261,24 +278,30 @@ font-size: 2rem;
 
 @media (max-width:400px) {
 	.inicio_container {
-		margin: 36px 0 0 0;
+		margin: 2.25rem 0 0 0;
 	}
 	
 	.inicio_content .btn_inicio {
-		padding: 12px 18px;
-		margin: 12px 4px;
+		padding: 0.75rem 1.125rem;
+		margin: 0.75rem 0.25rem;
 	}
 	
-	.inicio .inicio_img {
-		display: none;
+	.inicio_content h2 {
+		font-size: 2.5rem;
 	}
 
-	.inicio_content h2 {
-		font-size: 40px;
+	.inicio .social_links {
+		margin-top: 0.3rem;
+		display: flex;
+		justify-content: space-evenly;
 	}
 
 	.contato .card-contato {
 		font-size: 1rem;
 	}
 
+	.sobre .btn_sobre {
+		text-align: center;
+		align-self: center;
+	}
 }

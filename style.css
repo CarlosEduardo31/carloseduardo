@@ -125,8 +125,11 @@ section {
 }
 
 .sobre .img_sobre {
+	opacity:0;
+	transform: translateX(-100%);
 	width: 100%;
 	border-radius: 0.625rem;
+	transition: all 0.8s ease;
 }
 
 .sobre .sobre_content {
@@ -177,7 +180,7 @@ section {
 	width: 0%;
 	height: 100%;
 	z-index: -77;
-	transition: 0.7s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .sobre .btn_sobre:hover span {
@@ -191,6 +194,7 @@ section {
 /* SECTION HABILIDADES */
 .habilidades {
 	background-color: #ffffff;
+	overflow-x: hidden;
 }
 
 .habilidades h2 {
@@ -200,6 +204,16 @@ section {
 
 .habilidades .progressao {
 	background-color: #f52e2e;
+}
+
+.habilidades .progress-bar {
+	animation: animate-positive 3s;
+}
+
+@keyframes animate-positive {
+	0%{
+		width: 0;
+	}
 }
 
 .habilidades .habilidadesTexto h4 {
@@ -304,4 +318,41 @@ font-size: 2rem;
 		text-align: center;
 		align-self: center;
 	}
+}
+
+.show-off {
+	opacity: 0; 
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+}
+
+.inicio .show {
+	opacity: 1;
+    bottom: 0;
+}
+
+.habilidades .show-right {
+	opacity:0;
+	transform: translateX(100%);
+	transition: all 0.8s ease;
+}
+
+.habilidades .show-left {
+	opacity:0;
+	transform: translateX(-100%);
+	transition: all 0.8s ease;
+}
+
+.habilidades .show {
+	opacity: 1;
+	display: block;
+	transform: translateX(0);
+    bottom: 0;
+}
+
+.sobre .show {
+	opacity: 1;
+    bottom: 0;
+	transform: translateX(0);
 }

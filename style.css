@@ -15,6 +15,10 @@ body {
 	height: 100%;
 }
 
+.access-button {
+    border-radius: 50px;
+}
+
 section {
 	padding-block: 3.5rem;
 }
@@ -206,9 +210,15 @@ section {
 	background-color: #f52e2e;
 }
 
-.habilidades .progress-bar {
-	animation: animate-positive 3s;
+.habilidades .habilidadesTexto img {
+	object-fit: contain;
+    width: 15%;
+    height: 70px;
 }
+
+/* .habilidades .progress-bar {
+	animation: animate-positive 3s;
+} */
 
 @keyframes animate-positive {
 	0%{
